@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <button type="button">Nova tarefa +</button>
+    </header>
+
+    <form>
+        <h2>Adicionar nova tarefa</h2>
+        <input type="text" id="tarefa-nova" required placeholder="Descrição da tarefa">
+        <button type="submit">Adicionar</button>
+        <button id="botao-cancelar" type="reset">Cancelar</button>
+    </form>
+
+    <ul id="lista-tarefas"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
