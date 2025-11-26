@@ -1,0 +1,55 @@
+// scss/_products.scss
+@use 'variables' as v;
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: v.$radius-card;
+    }
+}
+
+.product-button {
+    display: block;
+    background-color: v.$color-button-bg;
+    color: v.$color-text-light;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: v.$radius-button;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: v.$color-button-bg-hover;
+    }
+}
+
+// Breakpoints
+@media screen and (max-width: v.$bp-tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: v.$bp-mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: 32px;
+    }
+}
